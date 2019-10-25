@@ -123,6 +123,33 @@ Demineur/fast:
 	$(MAKE) -f CMakeFiles/Demineur.dir/build.make CMakeFiles/Demineur.dir/build
 .PHONY : Demineur/fast
 
+src/affichage.o: src/affichage.c.o
+
+.PHONY : src/affichage.o
+
+# target to build an object file
+src/affichage.c.o:
+	$(MAKE) -f CMakeFiles/Demineur.dir/build.make CMakeFiles/Demineur.dir/src/affichage.c.o
+.PHONY : src/affichage.c.o
+
+src/affichage.i: src/affichage.c.i
+
+.PHONY : src/affichage.i
+
+# target to preprocess a source file
+src/affichage.c.i:
+	$(MAKE) -f CMakeFiles/Demineur.dir/build.make CMakeFiles/Demineur.dir/src/affichage.c.i
+.PHONY : src/affichage.c.i
+
+src/affichage.s: src/affichage.c.s
+
+.PHONY : src/affichage.s
+
+# target to generate assembly for a file
+src/affichage.c.s:
+	$(MAKE) -f CMakeFiles/Demineur.dir/build.make CMakeFiles/Demineur.dir/src/affichage.c.s
+.PHONY : src/affichage.c.s
+
 src/demineur.o: src/demineur.c.o
 
 .PHONY : src/demineur.o
@@ -186,6 +213,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Demineur"
 	@echo "... edit_cache"
+	@echo "... src/affichage.o"
+	@echo "... src/affichage.i"
+	@echo "... src/affichage.s"
 	@echo "... src/demineur.o"
 	@echo "... src/demineur.i"
 	@echo "... src/demineur.s"

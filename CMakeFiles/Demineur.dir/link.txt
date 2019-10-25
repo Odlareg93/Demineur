@@ -1,1 +1,1 @@
-/usr/bin/cc   -rdynamic CMakeFiles/Demineur.dir/src/main.c.o CMakeFiles/Demineur.dir/src/demineur.c.o  -o bin/Demineur 
+/usr/bin/cc   -rdynamic CMakeFiles/Demineur.dir/src/main.c.o CMakeFiles/Demineur.dir/src/demineur.c.o CMakeFiles/Demineur.dir/src/affichage.c.o  -o bin/Demineur 

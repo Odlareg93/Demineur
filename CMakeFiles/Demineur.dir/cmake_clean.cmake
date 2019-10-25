@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Demineur.dir/src/main.c.o"
   "CMakeFiles/Demineur.dir/src/demineur.c.o"
+  "CMakeFiles/Demineur.dir/src/affichage.c.o"
   "bin/Demineur.pdb"
   "bin/Demineur"
 )

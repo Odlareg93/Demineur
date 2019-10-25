@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>
-#include "../include/demineur.h"
+#include "../include/affichage.h"
 
 void main(){
   int r;

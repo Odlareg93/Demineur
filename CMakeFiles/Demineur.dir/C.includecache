@@ -6,7 +6,27 @@
 
 #IncludeRegexTransform: 
 
+/home/nithushan/Bureau/GIT/Demineur/include/affichage.h
+../include/demineur.h
 /home/nithushan/Bureau/GIT/Demineur/include/demineur.h
+
+/home/nithushan/Bureau/GIT/Demineur/include/demineur.h
+stdio.h
+-
+stdbool.h
+-
+stdlib.h
+-
+
+/home/nithushan/Bureau/GIT/Demineur/src/affichage.c
+../include/affichage.h
+/home/nithushan/Bureau/GIT/Demineur/include/affichage.h
+stdio.h
+-
+stdlib.h
+-
+stdbool.h
+-
 
 /home/nithushan/Bureau/GIT/Demineur/src/demineur.c
 stdio.h
@@ -15,8 +35,8 @@ stdbool.h
 -
 stdlib.h
 -
-../include/demineur.h
-/home/nithushan/Bureau/GIT/Demineur/include/demineur.h
+../include/affichage.h
+/home/nithushan/Bureau/GIT/Demineur/include/affichage.h
 
 /home/nithushan/Bureau/GIT/Demineur/src/main.c
 stdio.h
@@ -25,6 +45,6 @@ stdbool.h
 -
 stdlib.h
 -
-../include/demineur.h
-/home/nithushan/Bureau/GIT/Demineur/include/demineur.h
+../include/affichage.h
+/home/nithushan/Bureau/GIT/Demineur/include/affichage.h
 
