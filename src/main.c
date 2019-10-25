@@ -15,8 +15,8 @@ main ()
   bool end = false;
   scase tab[20][20];
   fill(tab);
-  setVal(tab);
   putMine(tab);
+  setVal(tab);
   hidden = getHidden(tab);
   printf("%d : hidden\n",hidden);
   mine = getMine(tab);
@@ -41,7 +41,15 @@ main ()
     printf("Entrer votre numéro de cologne y: ");
     scanf("%d", &y);
 
+    for(int i =0;i < 20;++i){
+      for(int j = 0; j< 20;++j){
+      printf("%c",tab[i][j].val);
+    }
+    }
+
     play(x, y, tab);
+
+
 
   }
   return 0;

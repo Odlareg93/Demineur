@@ -67,8 +67,7 @@ play (int ligne, int col, scase tab[20][20])
 	}
       else
 	{
-	  //fonction de propagation
-    propagate(ligne, col, tab);
+	  propagate(ligne,col,tab);
 	}
     }
 }
@@ -78,19 +77,21 @@ play (int ligne, int col, scase tab[20][20])
  */
 void propagate(int x_pos , int y_pos,scase tab[20][20]){
 
+    //printf("%c\n",tab[x_pos][y_pos].val);
+
     if (x_pos < 0 || x_pos >= W) // Position X hors plateau
         return ;
 
     if (y_pos < 0 || y_pos >= H) // Position Y hors plateau
         return ;
 
-    if (tab[x_pos][y_pos].val == ' ' && tab[x_pos][y_pos].isHidden == 0) //Deja éxploré
+    if (tab[x_pos][y_pos].val == '0' && tab[x_pos][y_pos].isHidden == 0) //Deja éxploré
         return ;
 
     if (tab[x_pos][y_pos].val == 'X' ) //BOMB
         return ;
 
-    if (tab[x_pos][y_pos].isHidden == 1 && tab[x_pos][y_pos].val == ' '){
+    if (tab[x_pos][y_pos].isHidden == 1 && tab[x_pos][y_pos].val == '0'){
         tab[x_pos][y_pos].isHidden = 0;
     }
     if (tab[x_pos][y_pos].isHidden == 1 && tab[x_pos][y_pos].val == '1'){
@@ -130,7 +131,7 @@ void propagate(int x_pos , int y_pos,scase tab[20][20]){
     }
 
 
-    if (tab[x_pos][y_pos].val == ' '){
+    if (tab[x_pos][y_pos].val == '0'){
         propagate(x_pos + 1 ,y_pos,tab);
         propagate(x_pos - 1,y_pos,tab);
         propagate(x_pos,y_pos + 1,tab);
