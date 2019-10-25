@@ -18,7 +18,7 @@ typedef struct scase scase;
 
 bool CaseMine (int ligne, int col, scase board[20][20]);
 bool MoveValide (int ligne, int col, scase board[20][20]);
-void game_over ();
+void game_over (scase tab[20][20]);
 void victoire ();
 void play (int ligne, int col, scase tab[20][20]);
 void propagate(int x_pos , int y_pos,scase tab[20][20]);

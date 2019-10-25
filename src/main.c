@@ -48,6 +48,9 @@ main ()
     }
 
     play(x, y, tab);
+    if(isWin(tab)){
+      victoire();
+    }
 
 
 

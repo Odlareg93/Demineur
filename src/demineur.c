@@ -27,7 +27,7 @@ MoveValide (int ligne, int col, scase tab[20][20])
 bool
 CaseMine (int ligne, int col, scase tab[20][20])
 {
-  if (tab[ligne][col].val == 'X')
+  if (tab[ligne][col].val == 'x')
     return (true);
   else
     return (false);
@@ -37,8 +37,10 @@ CaseMine (int ligne, int col, scase tab[20][20])
  * Fonction permettant de quitter le jeu après une defaite
  */
 void
-game_over ()
+game_over (scase tab[20][20])
 {
+  print_tableau_final(tab);
+
   printf ("Vous avez perdu !\n");
   exit (0);
 
@@ -63,7 +65,8 @@ play (int ligne, int col, scase tab[20][20])
     {
       if (CaseMine (ligne, col, tab) == true)
 	{
-	  game_over ();
+	  game_over(tab);
+
 	}
       else
 	{
