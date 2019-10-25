@@ -1,18 +1,9 @@
-#include <stdio.h>
-
-struct scase
-{
-    char val ;
-    int isHidden ; 
-};
-
-
 void propagate(int x_pos , int y_pos ){
     
     if (x_pos < 0 || x_pos >= W) // Position X hors plateau
         return ;    
 
-    if (y_pos < 0 || y_pos >= J) // Position Y hors plateau
+    if (y_pos < 0 || y_pos >= H) // Position Y hors plateau
         return ;
 
     if (tab[x_pos][y_pos].val == ' ' && tab[x_pos][y_pos].isHidden == 0) //Deja éxploré 
