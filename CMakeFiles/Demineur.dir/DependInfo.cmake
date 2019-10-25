@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/home/nithushan/Bureau/GIT/Demineur/src/demineur.c" "/home/nithushan/Bureau/GIT/Demineur/CMakeFiles/Demineur.dir/src/demineur.c.o"
+  "/home/nithushan/Bureau/GIT/Demineur/src/main.c" "/home/nithushan/Bureau/GIT/Demineur/CMakeFiles/Demineur.dir/src/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

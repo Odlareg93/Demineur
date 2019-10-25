@@ -4,3 +4,6 @@
 CMakeFiles/Demineur.dir/src/demineur.c.o: include/demineur.h
 CMakeFiles/Demineur.dir/src/demineur.c.o: src/demineur.c
 
+CMakeFiles/Demineur.dir/src/main.c.o: include/demineur.h
+CMakeFiles/Demineur.dir/src/main.c.o: src/main.c
+

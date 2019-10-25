@@ -18,3 +18,13 @@ stdlib.h
 ../include/demineur.h
 /home/nithushan/Bureau/GIT/Demineur/include/demineur.h
 
+/home/nithushan/Bureau/GIT/Demineur/src/main.c
+stdio.h
+-
+stdbool.h
+-
+stdlib.h
+-
+../include/demineur.h
+/home/nithushan/Bureau/GIT/Demineur/include/demineur.h
+
