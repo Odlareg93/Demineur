@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['main',['main',['../main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.c']]],
-  ['movevalide',['MoveValide',['../demineur_8c.html#a4a197bde4693d226123413affb299532',1,'demineur.c']]]
+  ['game_5fover',['game_over',['../demineur_8c.html#aad59e6b2ddf8de98fd1bd7532ca949b8',1,'demineur.c']]],
+  ['gethidden',['getHidden',['../demineur_8c.html#a4d9a93ed3234f9159d8c49c6c151d3ba',1,'demineur.c']]],
+  ['getmine',['getMine',['../demineur_8c.html#a53d56be71c56c8ab49adf19745b11c4b',1,'demineur.c']]]
 ];

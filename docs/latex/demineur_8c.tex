@@ -23,7 +23,21 @@ void \hyperlink{demineur_8c_aad59e6b2ddf8de98fd1bd7532ca949b8}{game\+\_\+over} (
 void \hyperlink{demineur_8c_aac6b7b14f2b7a9df1ee2154a3536dc60}{victoire} ()
 \item 
 void \hyperlink{demineur_8c_a4a813d4ceeee7b7c009fa93226d77689}{play} (int ligne, int col, scase tab\mbox{[}20\mbox{]}\mbox{[}20\mbox{]})
-\end{DoxyCompactItemize}
+\item 
+void \hyperlink{demineur_8c_add91513e7e1f08038192d83a3cba12c4}{propagate} (int x\+\_\+pos, int y\+\_\+pos, scase tab\mbox{[}20\mbox{]}\mbox{[}20\mbox{]})
+\item 
+void \hyperlink{demineur_8c_a77fa30c2aa65e55622dfd32d53286768}{fill} (struct scase tab\mbox{[}20\mbox{]}\mbox{[}20\mbox{]})
+\item 
+void \hyperlink{demineur_8c_a35c0a50b3127a4ae724ca105d8972655}{set\+Val} (struct scase tab\mbox{[}20\mbox{]}\mbox{[}20\mbox{]})
+\begin{DoxyCompactList}\small\item\em Determine la valeur de la case en fonction du nombre de mine autour. \end{DoxyCompactList}\item 
+void \hyperlink{demineur_8c_ae8c00ff54ff48fca0e7451010ab16cfb}{put\+Mine} (struct scase tab\mbox{[}20\mbox{]}\mbox{[}20\mbox{]})
+\begin{DoxyCompactList}\small\item\em Place les mines de manière aléatoires. \end{DoxyCompactList}\item 
+int \hyperlink{demineur_8c_a4d9a93ed3234f9159d8c49c6c151d3ba}{get\+Hidden} (struct scase tab\mbox{[}20\mbox{]}\mbox{[}20\mbox{]})
+\begin{DoxyCompactList}\small\item\em compte le nombre de case cachés \end{DoxyCompactList}\item 
+int \hyperlink{demineur_8c_a53d56be71c56c8ab49adf19745b11c4b}{get\+Mine} (struct scase tab\mbox{[}20\mbox{]}\mbox{[}20\mbox{]})
+\begin{DoxyCompactList}\small\item\em compte le nombre de mine \end{DoxyCompactList}\item 
+int \hyperlink{demineur_8c_a85881b069bc589c2954d2b764016d63e}{is\+Win} (struct scase tab\mbox{[}20\mbox{]}\mbox{[}20\mbox{]})
+\begin{DoxyCompactList}\small\item\em Verifie la victoire. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -38,13 +52,73 @@ Fonctions qui constituent la logique du jeu.
 \subsubsection{\texorpdfstring{Case\+Mine()}{CaseMine()}}
 {\footnotesize\ttfamily bool Case\+Mine (\begin{DoxyParamCaption}\item[{int}]{ligne,  }\item[{int}]{col,  }\item[{scase}]{tab\mbox{[}20\mbox{]}\mbox{[}20\mbox{]} }\end{DoxyParamCaption})}
 
-Fonction permettant savoir si une case est occupée par une mine \mbox{\Hypertarget{demineur_8c_aad59e6b2ddf8de98fd1bd7532ca949b8}\label{demineur_8c_aad59e6b2ddf8de98fd1bd7532ca949b8}} 
+Fonction permettant savoir si une case est occupée par une mine \mbox{\Hypertarget{demineur_8c_a77fa30c2aa65e55622dfd32d53286768}\label{demineur_8c_a77fa30c2aa65e55622dfd32d53286768}} 
+\index{demineur.\+c@{demineur.\+c}!fill@{fill}}
+\index{fill@{fill}!demineur.\+c@{demineur.\+c}}
+\subsubsection{\texorpdfstring{fill()}{fill()}}
+{\footnotesize\ttfamily void fill (\begin{DoxyParamCaption}\item[{struct scase}]{tab\mbox{[}20\mbox{]}\mbox{[}20\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{demineur_8c_aad59e6b2ddf8de98fd1bd7532ca949b8}\label{demineur_8c_aad59e6b2ddf8de98fd1bd7532ca949b8}} 
 \index{demineur.\+c@{demineur.\+c}!game\+\_\+over@{game\+\_\+over}}
 \index{game\+\_\+over@{game\+\_\+over}!demineur.\+c@{demineur.\+c}}
 \subsubsection{\texorpdfstring{game\+\_\+over()}{game\_over()}}
 {\footnotesize\ttfamily void game\+\_\+over (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Fonction permettant de quitter le jeu après une defaite \mbox{\Hypertarget{demineur_8c_a4a197bde4693d226123413affb299532}\label{demineur_8c_a4a197bde4693d226123413affb299532}} 
+Fonction permettant de quitter le jeu après une defaite \mbox{\Hypertarget{demineur_8c_a4d9a93ed3234f9159d8c49c6c151d3ba}\label{demineur_8c_a4d9a93ed3234f9159d8c49c6c151d3ba}} 
+\index{demineur.\+c@{demineur.\+c}!get\+Hidden@{get\+Hidden}}
+\index{get\+Hidden@{get\+Hidden}!demineur.\+c@{demineur.\+c}}
+\subsubsection{\texorpdfstring{get\+Hidden()}{getHidden()}}
+{\footnotesize\ttfamily int get\+Hidden (\begin{DoxyParamCaption}\item[{struct scase}]{tab\mbox{[}20\mbox{]}\mbox{[}20\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+compte le nombre de case cachés 
+
+
+\begin{DoxyParams}{Parameters}
+{\em le} & tableau du demineur à compter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retourne le nombre de case caché dans le demineur 
+\end{DoxyReturn}
+\mbox{\Hypertarget{demineur_8c_a53d56be71c56c8ab49adf19745b11c4b}\label{demineur_8c_a53d56be71c56c8ab49adf19745b11c4b}} 
+\index{demineur.\+c@{demineur.\+c}!get\+Mine@{get\+Mine}}
+\index{get\+Mine@{get\+Mine}!demineur.\+c@{demineur.\+c}}
+\subsubsection{\texorpdfstring{get\+Mine()}{getMine()}}
+{\footnotesize\ttfamily int get\+Mine (\begin{DoxyParamCaption}\item[{struct scase}]{tab\mbox{[}20\mbox{]}\mbox{[}20\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+compte le nombre de mine 
+
+
+\begin{DoxyParams}{Parameters}
+{\em le} & tableau du demineur à compter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retourne le nombre de mine 
+\end{DoxyReturn}
+\mbox{\Hypertarget{demineur_8c_a85881b069bc589c2954d2b764016d63e}\label{demineur_8c_a85881b069bc589c2954d2b764016d63e}} 
+\index{demineur.\+c@{demineur.\+c}!is\+Win@{is\+Win}}
+\index{is\+Win@{is\+Win}!demineur.\+c@{demineur.\+c}}
+\subsubsection{\texorpdfstring{is\+Win()}{isWin()}}
+{\footnotesize\ttfamily int is\+Win (\begin{DoxyParamCaption}\item[{struct scase}]{tab\mbox{[}20\mbox{]}\mbox{[}20\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Verifie la victoire. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em le} & tableau du demineur à compter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retourne 1 si l\textquotesingle{}utilisateur a gagné 0 si il n\textquotesingle{}a pas gagné 
+\end{DoxyReturn}
+\mbox{\Hypertarget{demineur_8c_a4a197bde4693d226123413affb299532}\label{demineur_8c_a4a197bde4693d226123413affb299532}} 
 \index{demineur.\+c@{demineur.\+c}!Move\+Valide@{Move\+Valide}}
 \index{Move\+Valide@{Move\+Valide}!demineur.\+c@{demineur.\+c}}
 \subsubsection{\texorpdfstring{Move\+Valide()}{MoveValide()}}
@@ -56,7 +130,43 @@ Fonction pour savoir si le move est dans le tableau \mbox{\Hypertarget{demineur_
 \subsubsection{\texorpdfstring{play()}{play()}}
 {\footnotesize\ttfamily void play (\begin{DoxyParamCaption}\item[{int}]{ligne,  }\item[{int}]{col,  }\item[{scase}]{tab\mbox{[}20\mbox{]}\mbox{[}20\mbox{]} }\end{DoxyParamCaption})}
 
-Fonction permettant de jouer sur une case \mbox{\Hypertarget{demineur_8c_aac6b7b14f2b7a9df1ee2154a3536dc60}\label{demineur_8c_aac6b7b14f2b7a9df1ee2154a3536dc60}} 
+Fonction permettant de jouer sur une case \mbox{\Hypertarget{demineur_8c_add91513e7e1f08038192d83a3cba12c4}\label{demineur_8c_add91513e7e1f08038192d83a3cba12c4}} 
+\index{demineur.\+c@{demineur.\+c}!propagate@{propagate}}
+\index{propagate@{propagate}!demineur.\+c@{demineur.\+c}}
+\subsubsection{\texorpdfstring{propagate()}{propagate()}}
+{\footnotesize\ttfamily void propagate (\begin{DoxyParamCaption}\item[{int}]{x\+\_\+pos,  }\item[{int}]{y\+\_\+pos,  }\item[{scase}]{tab\mbox{[}20\mbox{]}\mbox{[}20\mbox{]} }\end{DoxyParamCaption})}
+
+Fonction permettant de propager \mbox{\Hypertarget{demineur_8c_ae8c00ff54ff48fca0e7451010ab16cfb}\label{demineur_8c_ae8c00ff54ff48fca0e7451010ab16cfb}} 
+\index{demineur.\+c@{demineur.\+c}!put\+Mine@{put\+Mine}}
+\index{put\+Mine@{put\+Mine}!demineur.\+c@{demineur.\+c}}
+\subsubsection{\texorpdfstring{put\+Mine()}{putMine()}}
+{\footnotesize\ttfamily void put\+Mine (\begin{DoxyParamCaption}\item[{struct scase}]{tab\mbox{[}20\mbox{]}\mbox{[}20\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Place les mines de manière aléatoires. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em le} & tableau du demineur à remplire \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{demineur_8c_a35c0a50b3127a4ae724ca105d8972655}\label{demineur_8c_a35c0a50b3127a4ae724ca105d8972655}} 
+\index{demineur.\+c@{demineur.\+c}!set\+Val@{set\+Val}}
+\index{set\+Val@{set\+Val}!demineur.\+c@{demineur.\+c}}
+\subsubsection{\texorpdfstring{set\+Val()}{setVal()}}
+{\footnotesize\ttfamily void set\+Val (\begin{DoxyParamCaption}\item[{struct scase}]{tab\mbox{[}20\mbox{]}\mbox{[}20\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Determine la valeur de la case en fonction du nombre de mine autour. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em le} & tableau du demineur à remplire \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{demineur_8c_aac6b7b14f2b7a9df1ee2154a3536dc60}\label{demineur_8c_aac6b7b14f2b7a9df1ee2154a3536dc60}} 
 \index{demineur.\+c@{demineur.\+c}!victoire@{victoire}}
 \index{victoire@{victoire}!demineur.\+c@{demineur.\+c}}
 \subsubsection{\texorpdfstring{victoire()}{victoire()}}

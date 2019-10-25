@@ -11,17 +11,18 @@
 int
 main ()
 {
-  int r;
+  int hidden,mine,r;
   scase tab[20][20];
+  fill(tab);
+  setVal(tab);
+  putMine(tab);
+  hidden = getHidden(tab);
+  printf("%d : hidden\n",hidden);
+  mine = getMine(tab);
+  printf("%d mine\n",mine);
+  printf("%d : is WIn\n",isWin(tab));
 
-  for (int a = 0; a < 20; a++)
-    {
-      for (int z = 0; z < 20; z++)
-	{
-	  tab[a][z].val = '0';
-	  tab[a][z].isHidden = 0;
-	}
-    }
+
 
   print_tableau (tab);
   return 0;

@@ -94,6 +94,25 @@ Functions</h2></td></tr>
 <tr class="separator:aac6b7b14f2b7a9df1ee2154a3536dc60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a813d4ceeee7b7c009fa93226d77689"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="demineur_8c.html#a4a813d4ceeee7b7c009fa93226d77689">play</a> (int ligne, int col, scase tab[20][20])</td></tr>
 <tr class="separator:a4a813d4ceeee7b7c009fa93226d77689"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add91513e7e1f08038192d83a3cba12c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="demineur_8c.html#add91513e7e1f08038192d83a3cba12c4">propagate</a> (int x_pos, int y_pos, scase tab[20][20])</td></tr>
+<tr class="separator:add91513e7e1f08038192d83a3cba12c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77fa30c2aa65e55622dfd32d53286768"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="demineur_8c.html#a77fa30c2aa65e55622dfd32d53286768">fill</a> (struct scase tab[20][20])</td></tr>
+<tr class="separator:a77fa30c2aa65e55622dfd32d53286768"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35c0a50b3127a4ae724ca105d8972655"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="demineur_8c.html#a35c0a50b3127a4ae724ca105d8972655">setVal</a> (struct scase tab[20][20])</td></tr>
+<tr class="memdesc:a35c0a50b3127a4ae724ca105d8972655"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine la valeur de la case en fonction du nombre de mine autour.  <a href="#a35c0a50b3127a4ae724ca105d8972655">More...</a><br /></td></tr>
+<tr class="separator:a35c0a50b3127a4ae724ca105d8972655"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8c00ff54ff48fca0e7451010ab16cfb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="demineur_8c.html#ae8c00ff54ff48fca0e7451010ab16cfb">putMine</a> (struct scase tab[20][20])</td></tr>
+<tr class="memdesc:ae8c00ff54ff48fca0e7451010ab16cfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Place les mines de manière aléatoires.  <a href="#ae8c00ff54ff48fca0e7451010ab16cfb">More...</a><br /></td></tr>
+<tr class="separator:ae8c00ff54ff48fca0e7451010ab16cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d9a93ed3234f9159d8c49c6c151d3ba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="demineur_8c.html#a4d9a93ed3234f9159d8c49c6c151d3ba">getHidden</a> (struct scase tab[20][20])</td></tr>
+<tr class="memdesc:a4d9a93ed3234f9159d8c49c6c151d3ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">compte le nombre de case cachés  <a href="#a4d9a93ed3234f9159d8c49c6c151d3ba">More...</a><br /></td></tr>
+<tr class="separator:a4d9a93ed3234f9159d8c49c6c151d3ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53d56be71c56c8ab49adf19745b11c4b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="demineur_8c.html#a53d56be71c56c8ab49adf19745b11c4b">getMine</a> (struct scase tab[20][20])</td></tr>
+<tr class="memdesc:a53d56be71c56c8ab49adf19745b11c4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">compte le nombre de mine  <a href="#a53d56be71c56c8ab49adf19745b11c4b">More...</a><br /></td></tr>
+<tr class="separator:a53d56be71c56c8ab49adf19745b11c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85881b069bc589c2954d2b764016d63e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="demineur_8c.html#a85881b069bc589c2954d2b764016d63e">isWin</a> (struct scase tab[20][20])</td></tr>
+<tr class="memdesc:a85881b069bc589c2954d2b764016d63e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifie la victoire.  <a href="#a85881b069bc589c2954d2b764016d63e">More...</a><br /></td></tr>
+<tr class="separator:a85881b069bc589c2954d2b764016d63e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Fonctions qui constituent la logique du jeu. </p>
@@ -133,6 +152,24 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a77fa30c2aa65e55622dfd32d53286768"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77fa30c2aa65e55622dfd32d53286768">&#9670;&nbsp;</a></span>fill()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fill </td>
+          <td>(</td>
+          <td class="paramtype">struct scase&#160;</td>
+          <td class="paramname"><em>tab</em>[20][20]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aad59e6b2ddf8de98fd1bd7532ca949b8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aad59e6b2ddf8de98fd1bd7532ca949b8">&#9670;&nbsp;</a></span>game_over()</h2>
 
@@ -148,6 +185,87 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Fonction permettant de quitter le jeu après une defaite </p>
+
+</div>
+</div>
+<a id="a4d9a93ed3234f9159d8c49c6c151d3ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d9a93ed3234f9159d8c49c6c151d3ba">&#9670;&nbsp;</a></span>getHidden()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int getHidden </td>
+          <td>(</td>
+          <td class="paramtype">struct scase&#160;</td>
+          <td class="paramname"><em>tab</em>[20][20]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>compte le nombre de case cachés </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">le</td><td>tableau du demineur à compter </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>retourne le nombre de case caché dans le demineur </dd></dl>
+
+</div>
+</div>
+<a id="a53d56be71c56c8ab49adf19745b11c4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53d56be71c56c8ab49adf19745b11c4b">&#9670;&nbsp;</a></span>getMine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int getMine </td>
+          <td>(</td>
+          <td class="paramtype">struct scase&#160;</td>
+          <td class="paramname"><em>tab</em>[20][20]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>compte le nombre de mine </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">le</td><td>tableau du demineur à compter </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>retourne le nombre de mine </dd></dl>
+
+</div>
+</div>
+<a id="a85881b069bc589c2954d2b764016d63e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85881b069bc589c2954d2b764016d63e">&#9670;&nbsp;</a></span>isWin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int isWin </td>
+          <td>(</td>
+          <td class="paramtype">struct scase&#160;</td>
+          <td class="paramname"><em>tab</em>[20][20]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifie la victoire. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">le</td><td>tableau du demineur à compter </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>retourne 1 si l'utilisateur a gagné 0 si il n'a pas gagné </dd></dl>
 
 </div>
 </div>
@@ -218,6 +336,93 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Fonction permettant de jouer sur une case </p>
+
+</div>
+</div>
+<a id="add91513e7e1f08038192d83a3cba12c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add91513e7e1f08038192d83a3cba12c4">&#9670;&nbsp;</a></span>propagate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void propagate </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x_pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y_pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">scase&#160;</td>
+          <td class="paramname"><em>tab</em>[20][20]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Fonction permettant de propager </p>
+
+</div>
+</div>
+<a id="ae8c00ff54ff48fca0e7451010ab16cfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8c00ff54ff48fca0e7451010ab16cfb">&#9670;&nbsp;</a></span>putMine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void putMine </td>
+          <td>(</td>
+          <td class="paramtype">struct scase&#160;</td>
+          <td class="paramname"><em>tab</em>[20][20]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Place les mines de manière aléatoires. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">le</td><td>tableau du demineur à remplire </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a35c0a50b3127a4ae724ca105d8972655"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35c0a50b3127a4ae724ca105d8972655">&#9670;&nbsp;</a></span>setVal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setVal </td>
+          <td>(</td>
+          <td class="paramtype">struct scase&#160;</td>
+          <td class="paramname"><em>tab</em>[20][20]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determine la valeur de la case en fonction du nombre de mine autour. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">le</td><td>tableau du demineur à remplire </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
