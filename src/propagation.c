@@ -1,28 +1,74 @@
 #include <stdio.h>
 
-#define W 5
-#define H 5
-
-int tab [H][W] =  {{0,0,0,0,0},
-                    {0,0,0,0,0},
-                    {0,0,0,0,0},
-                    {0,0,0,0,0},
-                    {0,0,0,0,0}};
+struct scase
+{
+    char val ;
+    int isHidden ; 
+};
 
 
 void propagate(int x_pos , int y_pos ){
-
+    
     if (x_pos < 0 || x_pos >= W) // Position X hors plateau
         return ;    
 
     if (y_pos < 0 || y_pos >= J) // Position Y hors plateau
         return ;
 
-    if (tab[x_pos][y_pos] == '1' )
+    if (tab[x_pos][y_pos].val == ' ' && tab[x_pos][y_pos].isHidden == 0) //Deja éxploré 
         return ; 
 
-    if (tab[x_pos][y_pos] == '2' )
-        printf("get rekt son") ; 
+    if (tab[x_pos][y_pos].val == 'X' ) //BOMB
+        return ;
+        
+    if (tab[x_pos][y_pos].isHidden == 1 && tab[x_pos][y_pos].val = '■'){
+        tab[x_pos][y_pos].val = ' ';
+        tab[x_pos][y_pos].isHidden = 0;
+    }
+    if (tab[x_pos][y_pos].isHidden == 1 && tab[x_pos][y_pos].val == '1'){
+        tab[x_pos][y_pos].isHidden = 0;
+        tab[x_pos][y_pos].val = '1';
+        return ; 
+    }
+    if (tab[x_pos][y_pos].isHidden == 1 && tab[x_pos][y_pos].val == '2'){
+        tab[x_pos][y_pos].isHidden = 0;
+        tab[x_pos][y_pos].val = '2';
+        return ; 
+    }
+    if (tab[x_pos][y_pos].isHidden == 1 && tab[x_pos][y_pos].val == '3'){
+        tab[x_pos][y_pos].isHidden = 0;
+        tab[x_pos][y_pos].val = '3';
+        return ; 
+    }
+    if (tab[x_pos][y_pos].isHidden == 1 && tab[x_pos][y_pos].val == '4'){
+        tab[x_pos][y_pos].isHidden = 0;
+        tab[x_pos][y_pos].val = '4';
+        return ; 
+    }
+    if (tab[x_pos][y_pos].isHidden == 1 && tab[x_pos][y_pos].val == '5'){
+        tab[x_pos][y_pos].isHidden = 0;
+        tab[x_pos][y_pos].val = '5';
+        return ; 
+    }
+    if (tab[x_pos][y_pos].isHidden == 1 && tab[x_pos][y_pos].val == '6'){
+        tab[x_pos][y_pos].isHidden = 0;
+        tab[x_pos][y_pos].val = '6';
+        return ; 
+
+    }
+    if (tab[x_pos][y_pos].isHidden == 1 && tab[x_pos][y_pos].val == '7'){
+        tab[x_pos][y_pos].isHidden = 0;
+        tab[x_pos][y_pos].val = '7';
+        return ; 
+
+    }
+    if (tab[x_pos][y_pos].isHidden == 1 && tab[x_pos][y_pos].val == '8'){
+        tab[x_pos][y_pos].isHidden = 0;
+        tab[x_pos][y_pos].val = '8';
+        return ; 
+
+    }
+
     
     if (tab[x_pos][y_pos] == 0){
         propagate(x_pos + 1 ,y_pos);
@@ -30,18 +76,4 @@ void propagate(int x_pos , int y_pos ){
         propagate(x_pos,y_pos + 1);
         propagate(x_pos,y_pos - 1);
     }
-}
-
-int main(){
-    for (int i = 0; i < H; i++)
-    {
-        printf("\n");
-        for (int j = 0; j < W; j++)
-        {
-            printf("%d",tab[i][j]);
-        }
-        
-    }
-    return 0;
-    
 }
