@@ -8,4 +8,4 @@ set(SRC
 set(HEADER
   include/demineur.h
 )
-add_executable(Calc ${SRC} ${HEADERS})
+add_executable(Demineur ${SRC} ${HEADERS})
