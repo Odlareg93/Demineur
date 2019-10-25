@@ -34,7 +34,9 @@ bool CaseMine (int ligne, int col,scase board[20][20])
 		return (false);
 }
 
-
+/**
+ * Fonction permettant d'afficher le tableau selon la valeurs des cases
+ */
 void print_tableau(scase tab[20][20]){
   for(int i = 0; i < 20;++i){
     for(int j = 0; j < 20;++j){
