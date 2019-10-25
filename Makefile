@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Calc
+# Target rules for targets named Demineur
 
 # Build rule for target.
-Calc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Calc
-.PHONY : Calc
+Demineur: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Demineur
+.PHONY : Demineur
 
 # fast build rule for target.
-Calc/fast:
-	$(MAKE) -f CMakeFiles/Calc.dir/build.make CMakeFiles/Calc.dir/build
-.PHONY : Calc/fast
+Demineur/fast:
+	$(MAKE) -f CMakeFiles/Demineur.dir/build.make CMakeFiles/Demineur.dir/build
+.PHONY : Demineur/fast
 
 src/demineur.o: src/demineur.c.o
 
@@ -129,7 +129,7 @@ src/demineur.o: src/demineur.c.o
 
 # target to build an object file
 src/demineur.c.o:
-	$(MAKE) -f CMakeFiles/Calc.dir/build.make CMakeFiles/Calc.dir/src/demineur.c.o
+	$(MAKE) -f CMakeFiles/Demineur.dir/build.make CMakeFiles/Demineur.dir/src/demineur.c.o
 .PHONY : src/demineur.c.o
 
 src/demineur.i: src/demineur.c.i
@@ -138,7 +138,7 @@ src/demineur.i: src/demineur.c.i
 
 # target to preprocess a source file
 src/demineur.c.i:
-	$(MAKE) -f CMakeFiles/Calc.dir/build.make CMakeFiles/Calc.dir/src/demineur.c.i
+	$(MAKE) -f CMakeFiles/Demineur.dir/build.make CMakeFiles/Demineur.dir/src/demineur.c.i
 .PHONY : src/demineur.c.i
 
 src/demineur.s: src/demineur.c.s
@@ -147,7 +147,7 @@ src/demineur.s: src/demineur.c.s
 
 # target to generate assembly for a file
 src/demineur.c.s:
-	$(MAKE) -f CMakeFiles/Calc.dir/build.make CMakeFiles/Calc.dir/src/demineur.c.s
+	$(MAKE) -f CMakeFiles/Demineur.dir/build.make CMakeFiles/Demineur.dir/src/demineur.c.s
 .PHONY : src/demineur.c.s
 
 # Help Target
@@ -157,7 +157,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... Calc"
+	@echo "... Demineur"
 	@echo "... edit_cache"
 	@echo "... src/demineur.o"
 	@echo "... src/demineur.i"

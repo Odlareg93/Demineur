@@ -22,9 +22,9 @@ bool MoveValide(int ligne, int col)
 
 
 
-bool CaseMine (int ligne, int col,scase board[20][20])
+bool CaseMine (int ligne, int col,scase tab[20][20])
 {
-	if (board[ligne][col].val == 'X')
+	if (tab[ligne][col].val == 'X')
 		return (true);
 	else
 		return (false);
@@ -40,7 +40,9 @@ void print_tableau(scase tab[20][20]){
 
       if(tab[i][j].val == '0' ){
         printf(" ");
+      //printf("%s%c%s ",BLEU, tab[i][j].val,RESET);
       }
+
 
       if(tab[i][j].val == '1' || tab[i][j].val == '2' || tab[i][j].val == '3'){
         printf("%s%c%s ",BLEU, tab[i][j].val,RESET);
@@ -54,6 +56,11 @@ void print_tableau(scase tab[20][20]){
         printf("%s%c%s ",ROUGE, tab[i][j].val,RESET);
       }
 
+
+    }
+
+    else if(tab[i][j].isHidden == 1){
+        printf("■ ");
 
     }
   }

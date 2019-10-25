@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/nithushan/Bureau/GIT/Demineur/include/demineur.h
+
+/home/nithushan/Bureau/GIT/Demineur/src/demineur.c
+stdio.h
+-
+stdbool.h
+-
+stdlib.h
+-
+../include/demineur.h
+/home/nithushan/Bureau/GIT/Demineur/include/demineur.h
+
