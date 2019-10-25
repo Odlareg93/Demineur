@@ -11,7 +11,9 @@
 
 
 
-
+/**
+ * Fonction pour savoir si le move est dans le tableau
+ */
 bool MoveValide(int ligne, int col)
 {
 
@@ -21,7 +23,9 @@ bool MoveValide(int ligne, int col)
 
 
 
-
+/**
+ * Fonction permettant savoir si une case est occupée par une mine
+ */
 bool CaseMine (int ligne, int col,scase tab[20][20])
 {
 	if (tab[ligne][col].val == 'X')
@@ -67,19 +71,4 @@ void print_tableau(scase tab[20][20]){
   printf("\n");
 
 }
-}
-
-void main(){
-    int r;
-    scase tab[20][20];
-
-    for(int a = 0;a<20;a++){
-        for(int z = 0;z<20;z++){
-            tab[a][z].val = '0';
-            tab[a][z].isHidden = 0;
-        }
-    }
-
-    print_tableau(tab);
-
 }
