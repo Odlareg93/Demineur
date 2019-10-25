@@ -22,7 +22,7 @@ print_tableau (scase tab[20][20])
 	  if (tab[i][j].isHidden == 0)
 	    {
 
-	      if (tab[i][j].val == '0')
+	      if (tab[i][j].val == ' ')
 		{
 		  printf (" ");
 		  //printf("%s%c%s ",BLEU, tab[i][j].val,RESET);

@@ -1,0 +1,168 @@
+* commit 08c9afb4a4386a4555cdcdc6c6a11ae2793057b8
+| Author: Nkaruna00 <nithushankarunakaran@gmail.com>
+| Date:   Fri Oct 25 15:29:55 2019 +0200
+| 
+|     Ajout des num près des cases
+| 
+* commit c64b80d42e458037a80219415cecaa9c294a8680
+| Author: Nkaruna00 <nithushankarunakaran@gmail.com>
+| Date:   Fri Oct 25 15:12:11 2019 +0200
+| 
+|     Mine, Initialisation
+| 
+* commit b82e6edd4de82a01f84c1b4495b8c3703c6748fd
+| Author: Nkaruna00 <nithushankarunakaran@gmail.com>
+| Date:   Fri Oct 25 14:47:41 2019 +0200
+| 
+|     Fonction de propagation
+| 
+* commit 6eeb8873d3a2ee2e9179e2ae784471c97c4ab483
+| Author: Nkaruna00 <nithushankarunakaran@gmail.com>
+| Date:   Fri Oct 25 14:19:34 2019 +0200
+| 
+|     Petite update du ReadMe
+| 
+* commit 28fd9bb91f8077d49294ecc61de329a69e5ffb27
+| Author: Nkaruna00 <nithushankarunakaran@gmail.com>
+| Date:   Fri Oct 25 13:34:30 2019 +0200
+| 
+|     Doxygene commentaires des fichiers
+| 
+* commit 3de3e6e3dc1cfcfff442a1c842d93c9982c6e674
+| Author: Nkaruna00 <nithushankarunakaran@gmail.com>
+| Date:   Fri Oct 25 13:27:14 2019 +0200
+| 
+|     Indentation avec outil indent
+| 
+* commit c16ca67706eed7251814ff17eadcd7d28a737e52
+| Author: Nkaruna00 <nithushankarunakaran@gmail.com>
+| Date:   Fri Oct 25 13:18:55 2019 +0200
+| 
+|     Deplacement de Doxygen dans docs
+| 
+* commit 0ec152040bfc8d9d15ce5177f0660f8af69a429a
+| Author: Nkaruna00 <nithushankarunakaran@gmail.com>
+| Date:   Fri Oct 25 13:02:49 2019 +0200
+| 
+|     Fonction play et gameover
+| 
+* commit b587688fefc32efadef279edf45d408756220a63
+| Author: Nkaruna00 <nithushankarunakaran@gmail.com>
+| Date:   Fri Oct 25 12:52:11 2019 +0200
+| 
+|     Doxygen et fonction play()
+| 
+* commit 06d813714db5b0366de433fc1912440c399f84a3
+| Author: Nkaruna00 <nithushankarunakaran@gmail.com>
+| Date:   Fri Oct 25 12:36:12 2019 +0200
+| 
+|     Code Affichage à part
+| 
+* commit 530c1c123dd6134baaaafddff72f47a7177555c1
+| Author: Nkaruna00 <nithushankarunakaran@gmail.com>
+| Date:   Fri Oct 25 11:58:30 2019 +0200
+| 
+|     Doxygen
+| 
+* commit da72f000e3fa8859f0d4b485bd4e46d2e2f27935
+| Author: Nkaruna00 <nithushankarunakaran@gmail.com>
+| Date:   Fri Oct 25 11:55:08 2019 +0200
+| 
+|     Deplacement du main et Cmake corrigé
+| 
+* commit c783eacb32b01869f0b2b27266284b5aceb0a126
+| Author: Nkaruna00 <nithushankarunakaran@gmail.com>
+| Date:   Fri Oct 25 11:44:35 2019 +0200
+| 
+|     Cubes
+| 
+* commit 0f669eb1f4e1cbf5da076df2bda560278af53316
+| Author: Nkaruna00 <nithushankarunakaran@gmail.com>
+| Date:   Fri Oct 25 11:22:04 2019 +0200
+| 
+|     Hidden cubes
+| 
+* commit f72c6ffe1f9cd687073fed7341e4c963319a418c
+| Author: Nkaruna00 <nithushankarunakaran@gmail.com>
+| Date:   Fri Oct 25 11:10:48 2019 +0200
+| 
+|     Correction affichage 0
+| 
+* commit bfd966460d2c57e3bc98551a017b39b5d7dfc5ad
+| Author: Nkaruna00 <nithushankarunakaran@gmail.com>
+| Date:   Fri Oct 25 11:07:30 2019 +0200
+| 
+|     CMakeCorrigé
+| 
+* commit d401a8bcd36cb609de076aa1d36e59fac9e53453
+| Author: Nkaruna00 <nithushankarunakaran@gmail.com>
+| Date:   Fri Oct 25 11:06:18 2019 +0200
+| 
+|     Structure et cmake
+| 
+* commit 33a06c43806bfab5bac8699a042f1aed04f0368e
+| Author: Odlareg93 <g.labamendes@gmail.com>
+| Date:   Fri Oct 25 10:54:25 2019 +0200
+| 
+|     -rm useless file
+|   
+*   commit de8b26a0fc9f84b66c167ac98e6d9b66cd0216de
+|\  Merge: e6a648a 5e98a28
+| | Author: Nkaruna00 <nithushankarunakaran@gmail.com>
+| | Date:   Fri Oct 25 10:51:01 2019 +0200
+| | 
+| |     Merge branch 'Affichage' into dev
+| | 
+| * commit 5e98a2890edbb9174b637763e7c707fd24cd1822
+| | Author: Nkaruna00 <nithushankarunakaran@gmail.com>
+| | Date:   Fri Oct 25 10:49:15 2019 +0200
+| | 
+| |     Cmake
+| | 
+| * commit 6eb4d72525e3ea15318b92a84e490c213138dff2
+| | Author: Nkaruna00 <nithushankarunakaran@gmail.com>
+| | Date:   Fri Oct 25 10:36:22 2019 +0200
+| | 
+| |     Affichage avec couleurs
+| | 
+| * commit 6d97ffde5e983ce12e57d9f6f572e54f7b11137b
+| | Author: Nkaruna00 <nithushankarunakaran@gmail.com>
+| | Date:   Fri Oct 25 10:08:19 2019 +0200
+| | 
+| |     Move Valide
+| | 
+| * commit a06f5e06dfb349621b55c5812e3edd536aac9d30
+| | Author: Nkaruna00 <nithushankarunakaran@gmail.com>
+| | Date:   Fri Oct 25 10:04:11 2019 +0200
+| | 
+| |     MoveValide et print
+| | 
+| * commit aef5adcaf7b9166f59a404c030374a9fc77e4403
+| | Author: Nkaruna00 <nithushankarunakaran@gmail.com>
+| | Date:   Thu Oct 24 16:00:20 2019 +0200
+| | 
+| |     testststs
+| | 
+| * commit d96f34d55d495183f07f890671754d58b0c81672
+| | Author: Nkaruna00 <nithushankarunakaran@gmail.com>
+| | Date:   Thu Oct 24 15:55:38 2019 +0200
+| | 
+| |     teest
+| | 
+* | commit e6a648a53360901696f7854cb9b17538d9a859ec
+|/  Author: Nkaruna00 <nithushankarunakaran@gmail.com>
+|   Date:   Thu Oct 24 15:23:17 2019 +0200
+|   
+|       Menu_tst
+| 
+* commit b098383ddfed9ba3594133f0c010f92789806aa3
+| Author: Odlareg93 <g.labamendes@gmail.com>
+| Date:   Thu Oct 24 15:15:31 2019 +0200
+| 
+|     file manager
+| 
+* commit d8740d85cfce66a2116d46e3798dfee9fcc8511e
+  Author: Geraldo Laba Mendes <35531386+Odlareg93@users.noreply.github.com>
+  Date:   Thu Oct 24 15:02:04 2019 +0200
+  
+      Initial commit
