@@ -1,0 +1,47 @@
+\hypertarget{demineur_8c}{}\section{/home/nithushan/\+Bureau/\+G\+I\+T/\+Demineur/src/demineur.c File Reference}
+\label{demineur_8c}\index{/home/nithushan/\+Bureau/\+G\+I\+T/\+Demineur/src/demineur.\+c@{/home/nithushan/\+Bureau/\+G\+I\+T/\+Demineur/src/demineur.\+c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../include/affichage.\+h\char`\"{}}\newline
+Include dependency graph for demineur.\+c\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{demineur_8c_a4a197bde4693d226123413affb299532}{Move\+Valide} (int ligne, int col, scase tab\mbox{[}20\mbox{]}\mbox{[}20\mbox{]})
+\item 
+bool \hyperlink{demineur_8c_ab717d5948f9e157a8b9fd00b2d2eb547}{Case\+Mine} (int ligne, int col, scase tab\mbox{[}20\mbox{]}\mbox{[}20\mbox{]})
+\item 
+void \hyperlink{demineur_8c_aad59e6b2ddf8de98fd1bd7532ca949b8}{game\+\_\+over} ()
+\item 
+void \hyperlink{demineur_8c_a4a813d4ceeee7b7c009fa93226d77689}{play} (int ligne, int col, scase tab\mbox{[}20\mbox{]}\mbox{[}20\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{demineur_8c_ab717d5948f9e157a8b9fd00b2d2eb547}\label{demineur_8c_ab717d5948f9e157a8b9fd00b2d2eb547}} 
+\index{demineur.\+c@{demineur.\+c}!Case\+Mine@{Case\+Mine}}
+\index{Case\+Mine@{Case\+Mine}!demineur.\+c@{demineur.\+c}}
+\subsubsection{\texorpdfstring{Case\+Mine()}{CaseMine()}}
+{\footnotesize\ttfamily bool Case\+Mine (\begin{DoxyParamCaption}\item[{int}]{ligne,  }\item[{int}]{col,  }\item[{scase}]{tab\mbox{[}20\mbox{]}\mbox{[}20\mbox{]} }\end{DoxyParamCaption})}
+
+Fonction permettant savoir si une case est occupée par une mine \mbox{\Hypertarget{demineur_8c_aad59e6b2ddf8de98fd1bd7532ca949b8}\label{demineur_8c_aad59e6b2ddf8de98fd1bd7532ca949b8}} 
+\index{demineur.\+c@{demineur.\+c}!game\+\_\+over@{game\+\_\+over}}
+\index{game\+\_\+over@{game\+\_\+over}!demineur.\+c@{demineur.\+c}}
+\subsubsection{\texorpdfstring{game\+\_\+over()}{game\_over()}}
+{\footnotesize\ttfamily void game\+\_\+over (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Fonction permettant de quitter le jeu après une defaite \mbox{\Hypertarget{demineur_8c_a4a197bde4693d226123413affb299532}\label{demineur_8c_a4a197bde4693d226123413affb299532}} 
+\index{demineur.\+c@{demineur.\+c}!Move\+Valide@{Move\+Valide}}
+\index{Move\+Valide@{Move\+Valide}!demineur.\+c@{demineur.\+c}}
+\subsubsection{\texorpdfstring{Move\+Valide()}{MoveValide()}}
+{\footnotesize\ttfamily bool Move\+Valide (\begin{DoxyParamCaption}\item[{int}]{ligne,  }\item[{int}]{col,  }\item[{scase}]{tab\mbox{[}20\mbox{]}\mbox{[}20\mbox{]} }\end{DoxyParamCaption})}
+
+Fonction pour savoir si le move est dans le tableau \mbox{\Hypertarget{demineur_8c_a4a813d4ceeee7b7c009fa93226d77689}\label{demineur_8c_a4a813d4ceeee7b7c009fa93226d77689}} 
+\index{demineur.\+c@{demineur.\+c}!play@{play}}
+\index{play@{play}!demineur.\+c@{demineur.\+c}}
+\subsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily void play (\begin{DoxyParamCaption}\item[{int}]{ligne,  }\item[{int}]{col,  }\item[{scase}]{tab\mbox{[}20\mbox{]}\mbox{[}20\mbox{]} }\end{DoxyParamCaption})}
+
+Fonction permettant de jouer sur une case 

@@ -27,8 +27,12 @@ bool CaseMine (int ligne, int col,scase tab[20][20])
 		return (false);
 }
 
+/**
+ * Fonction permettant de quitter le jeu après une defaite
+ */
 void game_over(){
-  printf("Vous avez perdu !");
+  printf("Vous avez perdu !\n");
+  exit(0);
 
 }
 
