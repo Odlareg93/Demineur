@@ -68,6 +68,7 @@ play (int ligne, int col, scase tab[20][20])
       else
 	{
 	  //fonction de propagation
+    propagate(ligne, col, tab);
 	}
     }
 }
