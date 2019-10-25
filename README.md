@@ -1,4 +1,5 @@
 # Demineur
-Ce projet est un jeu de démineur 20*20
-"cmake CMakeLists.txt" pour pour utiliser CMake 
-Puis lancer une commande "make"
+Ce projet est un jeu de démineur 20*20 \n
+"cmake CMakeLists.txt" pour pour utiliser CMake \n
+Puis lancer "make" \n
+Executer "Demineur" dans /bin
