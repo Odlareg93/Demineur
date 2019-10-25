@@ -13,6 +13,8 @@
 void
 print_tableau (scase tab[20][20])
 {
+
+
   for (int i = 0; i < 20; ++i)
     {
       for (int j = 0; j < 20; ++j)
@@ -53,6 +55,7 @@ print_tableau (scase tab[20][20])
 
 	    }
 	}
+      printf("%d",i);
       printf ("\n");
 
     }
