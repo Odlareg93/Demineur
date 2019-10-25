@@ -1,0 +1,20 @@
+\hypertarget{affichage_8c}{}\section{affichage.\+c File Reference}
+\label{affichage_8c}\index{affichage.\+c@{affichage.\+c}}
+{\ttfamily \#include \char`\"{}../include/affichage.\+h\char`\"{}}\newline
+Include dependency graph for affichage.\+c\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{affichage_8c_a14f9a3454cefcbfd541742452410d7cc}{print\+\_\+tableau} (scase tab\mbox{[}20\mbox{]}\mbox{[}20\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{affichage_8c_a14f9a3454cefcbfd541742452410d7cc}\label{affichage_8c_a14f9a3454cefcbfd541742452410d7cc}} 
+\index{affichage.\+c@{affichage.\+c}!print\+\_\+tableau@{print\+\_\+tableau}}
+\index{print\+\_\+tableau@{print\+\_\+tableau}!affichage.\+c@{affichage.\+c}}
+\subsubsection{\texorpdfstring{print\+\_\+tableau()}{print\_tableau()}}
+{\footnotesize\ttfamily void print\+\_\+tableau (\begin{DoxyParamCaption}\item[{scase}]{tab\mbox{[}20\mbox{]}\mbox{[}20\mbox{]} }\end{DoxyParamCaption})}
+
+Fonction pour afficher le tableau 

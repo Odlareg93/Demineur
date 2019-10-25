@@ -26,7 +26,18 @@ bool CaseMine (int ligne, int col,scase tab[20][20])
 	else
 		return (false);
 }
-
 /**
- * Fonction permettant d'afficher le tableau selon la valeurs des cases
+ * Fonction permettant de jouer sur une case
  */
+void play(int x, int y){
+  if(MoveValid() == true){
+    if(CaseMine() == true){
+      // end game fonction
+    }
+    else{
+      //fonction de propagation
+    }
+  }
+
+
+}

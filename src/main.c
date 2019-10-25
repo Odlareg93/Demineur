@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include "../include/affichage.h"
 
-void main(){
+int main(){
   int r;
   scase tab[20][20];
 
@@ -15,4 +15,5 @@ void main(){
   }
 
   print_tableau(tab);
+  return 0;
 }

@@ -1,18 +1,21 @@
 var indexSectionsWithContent =
 {
-  0: "d",
-  1: "d"
+  0: "acdmp",
+  1: "adm",
+  2: "cmp"
 };
 
 var indexSectionNames =
 {
   0: "all",
-  1: "pages"
+  1: "files",
+  2: "functions"
 };
 
 var indexSectionLabels =
 {
   0: "All",
-  1: "Pages"
+  1: "Files",
+  2: "Functions"
 };
 

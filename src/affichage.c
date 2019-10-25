@@ -2,7 +2,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
-
+/**
+ * Fonction pour afficher le tableau
+ */
 void print_tableau(scase tab[20][20]){
   for(int i = 0; i < 20;++i){
     for(int j = 0; j < 20;++j){
