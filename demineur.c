@@ -40,25 +40,23 @@ void aff(){ // Affiche le tableau
 }
 
 void setVal(){ // Determine la valeur de la case en fonction du nombre de mine autour
-    int nbVal=0;
     for(int a = 0;a<20;a++){
         for(int z = 0;z<20;z++){
-            nbVal=0;
-            if(tab[a][z].val == 'x'){
-                break;
-            }
+            int nbVal=0;
+            if(tab[a][z].val != 'x'){
     
-            if(tab[a-1][z].val == 'x' ) nbVal++;
-            if(tab[a][z-1].val == 'x' ) nbVal++;
-            if(tab[a+1][z].val == 'x' ) nbVal++;
-            if(tab[a][z+1].val == 'x' ) nbVal++;
-            if(tab[a-1][z-1].val == 'x' ) nbVal++;
-            if(tab[a+1][z+1].val == 'x' ) nbVal++;
-            if(tab[a-1][z+1].val == 'x' ) nbVal++;
-            if(tab[a+1][z-1].val == 'x' ) nbVal++;
+            if(a>0 && tab[a-1][z].val == 'x' ) nbVal++;
+            if(z>0 && tab[a][z-1].val == 'x' ) nbVal++;
+            if(a<19 && tab[a+1][z].val == 'x' ) nbVal++;
+            if(z<19 && tab[a][z+1].val == 'x' ) nbVal++;
+            if(a>0 && z>0 && tab[a-1][z-1].val == 'x' ) nbVal++;
+            if(a<19 && z<19 && tab[a+1][z+1].val == 'x' ) nbVal++;
+            if(a>0 && z<19 && tab[a-1][z+1].val == 'x' ) nbVal++;
+            if(a<19 && z<19 && tab[a+1][z-1].val == 'x' ) nbVal++;
         
             char c = nbVal+'0';
             tab[a][z].val =  c;
+}
         }
     }
 }
