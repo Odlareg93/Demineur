@@ -10,5 +10,7 @@ struct scase {
 typedef struct scase scase;
 
 bool CaseMine (int ligne, int col,scase board[20][20]);
-bool MoveValide(int ligne, int col);
+bool MoveValide(int ligne, int col,scase board[20][20]);
+void game_over();
+void play(int ligne, int col,scase tab[20][20]);
 //void print_tableau(scase tab[20][20]);

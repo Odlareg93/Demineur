@@ -7,7 +7,7 @@
 /**
  * Fonction pour savoir si le move est dans le tableau
  */
-bool MoveValide(int ligne, int col)
+bool MoveValide(int ligne, int col,scase tab[20][20])
 {
 
 	return (ligne >= 0) && (ligne < 20) &&
@@ -26,18 +26,22 @@ bool CaseMine (int ligne, int col,scase tab[20][20])
 	else
 		return (false);
 }
+
+void game_over(){
+  printf("Vous avez perdu !");
+
+}
+
 /**
  * Fonction permettant de jouer sur une case
  */
-void play(int x, int y){
-  if(MoveValid() == true){
-    if(CaseMine() == true){
-      // end game fonction
+void play(int ligne, int col,scase tab[20][20]){
+  if(MoveValide(ligne,col,tab) == true){
+    if(CaseMine(ligne,col,tab) == true){
+      game_over();
     }
     else{
       //fonction de propagation
     }
   }
-
-
 }
