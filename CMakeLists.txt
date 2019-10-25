@@ -1,9 +1,11 @@
-cmake_minimum_required(Version 3.0)
-project(Demineur)
-Set(SRC
-    demineur.c
+cmake_minimum_required(VERSION 3.0)
+project(demineur)
 
+set(SRC
+  src/demineur.c
 )
-Set(Headers
-    demineur.h)
-add_executable(demineur ${SRC} ${HEADER}),
+
+set(HEADER
+  include/demineur.h
+)
+add_executable(Calc ${SRC} ${HEADERS})
