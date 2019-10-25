@@ -1,78 +1,73 @@
+/**
+ * @file demineur.c
+ * @brief Fonctions qui constituent la logique du jeu.
+ */
+
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>
-
-#define BLEU  "\x1B[36m" //bleu
-#define JAUNE  "\x1B[33m" // jaune
-#define ROUGE  "\x1B[31m" // rouge
-
-#define RESET  "\x1B[0m"
-
-struct scase {
-   char val;
-   int isHidden;
-};
-
-typedef struct scase scase;
+#include "../include/affichage.h"
 
 
-bool MoveValide(int ligne, int col)
+/**
+ * Fonction pour savoir si le move est dans le tableau
+ */
+bool
+MoveValide (int ligne, int col, scase tab[20][20])
 {
 
-	return (ligne >= 0) && (ligne < 20) &&
-		(col >= 0) && (col < 20);
+  return (ligne >= 0) && (ligne < 20) && (col >= 0) && (col < 20);
 }
 
 
 
-
-bool CaseMine (int ligne, int col,scase board[20][20])
+/**
+ * Fonction permettant savoir si une case est occupée par une mine
+ */
+bool
+CaseMine (int ligne, int col, scase tab[20][20])
 {
-	if (board[ligne][col].val == 'X')
-		return (true);
-	else
-		return (false);
+  if (tab[ligne][col].val == 'X')
+    return (true);
+  else
+    return (false);
 }
 
 /**
- * Fonction permettant d'afficher le tableau selon la valeurs des cases
+ * Fonction permettant de quitter le jeu après une defaite
  */
-void print_tableau(scase tab[20][20]){
-  for(int i = 0; i < 20;++i){
-    for(int j = 0; j < 20;++j){
-    if(tab[i][j].isHidden == 0){
-
-      if(tab[i][j].val == '0'){
-        printf("%s%c%s ",BLEU, tab[i][j].val,RESET);
-      }
-
-      if(tab[i][j].val == '1'){
-        printf("%s%c%s ",JAUNE, tab[i][j].val,RESET);
-      }
-
-      if(tab[i][j].val == '2'){
-        printf("%s%c%s ",ROUGE, tab[i][j].val,RESET);
-      }
-
-
-    }
-  }
-  printf("\n");
+void
+game_over ()
+{
+  printf ("Vous avez perdu !\n");
+  exit (0);
 
 }
+/**
+ * Fonction permettant de quitter le jeu après une victoire
+ */
+void
+victoire ()
+{
+  printf ("Vous avez gagné ! ");
+  exit (0);
 }
 
-void main(){
-    int r;
-    scase tab[20][20];
-
-    for(int a = 0;a<20;a++){
-        for(int z = 0;z<20;z++){
-            tab[a][z].val = '0';
-            tab[a][z].isHidden = 0;
-        }
+/**
+ * Fonction permettant de jouer sur une case
+ */
+void
+play (int ligne, int col, scase tab[20][20])
+{
+  if (MoveValide (ligne, col, tab) == true)
+    {
+      if (CaseMine (ligne, col, tab) == true)
+	{
+	  game_over ();
+	}
+      else
+	{
+	  //fonction de propagation
+	}
     }
-
-    print_tableau(tab);
-
 }

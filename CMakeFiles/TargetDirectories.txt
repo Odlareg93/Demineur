@@ -1,0 +1,3 @@
+/home/nithushan/Bureau/GIT/Demineur/CMakeFiles/rebuild_cache.dir
+/home/nithushan/Bureau/GIT/Demineur/CMakeFiles/Demineur.dir
+/home/nithushan/Bureau/GIT/Demineur/CMakeFiles/edit_cache.dir
