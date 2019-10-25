@@ -1,3 +1,8 @@
+/**
+ * @file affichage.c
+ * @brief Fonctions qui constribuent à l'affichage du jeu.
+ */
+
 #include "../include/affichage.h"
 #include <stdio.h>
 #include <stdlib.h>

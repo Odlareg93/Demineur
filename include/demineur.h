@@ -1,3 +1,8 @@
+/**
+ * @file demineur.h
+ * @brief Fonctions qui constituent la logique du jeu.
+ */
+
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>

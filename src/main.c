@@ -1,3 +1,8 @@
+/**
+ * @file main.c
+ * @brief Permet de lancer le jeu.
+ */
+
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>

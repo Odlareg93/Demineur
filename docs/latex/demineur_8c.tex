@@ -1,5 +1,10 @@
 \hypertarget{demineur_8c}{}\section{/home/nithushan/\+Bureau/\+G\+I\+T/\+Demineur/src/demineur.c File Reference}
 \label{demineur_8c}\index{/home/nithushan/\+Bureau/\+G\+I\+T/\+Demineur/src/demineur.\+c@{/home/nithushan/\+Bureau/\+G\+I\+T/\+Demineur/src/demineur.\+c}}
+
+
+Fonctions qui constituent la logique du jeu.  
+
+
 {\ttfamily \#include $<$stdio.\+h$>$}\newline
 {\ttfamily \#include $<$stdbool.\+h$>$}\newline
 {\ttfamily \#include $<$stdlib.\+h$>$}\newline
@@ -15,8 +20,15 @@ bool \hyperlink{demineur_8c_ab717d5948f9e157a8b9fd00b2d2eb547}{Case\+Mine} (int 
 \item 
 void \hyperlink{demineur_8c_aad59e6b2ddf8de98fd1bd7532ca949b8}{game\+\_\+over} ()
 \item 
+void \hyperlink{demineur_8c_aac6b7b14f2b7a9df1ee2154a3536dc60}{victoire} ()
+\item 
 void \hyperlink{demineur_8c_a4a813d4ceeee7b7c009fa93226d77689}{play} (int ligne, int col, scase tab\mbox{[}20\mbox{]}\mbox{[}20\mbox{]})
 \end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Fonctions qui constituent la logique du jeu. 
+
 
 
 \subsection{Function Documentation}
@@ -44,4 +56,10 @@ Fonction pour savoir si le move est dans le tableau \mbox{\Hypertarget{demineur_
 \subsubsection{\texorpdfstring{play()}{play()}}
 {\footnotesize\ttfamily void play (\begin{DoxyParamCaption}\item[{int}]{ligne,  }\item[{int}]{col,  }\item[{scase}]{tab\mbox{[}20\mbox{]}\mbox{[}20\mbox{]} }\end{DoxyParamCaption})}
 
-Fonction permettant de jouer sur une case 
+Fonction permettant de jouer sur une case \mbox{\Hypertarget{demineur_8c_aac6b7b14f2b7a9df1ee2154a3536dc60}\label{demineur_8c_aac6b7b14f2b7a9df1ee2154a3536dc60}} 
+\index{demineur.\+c@{demineur.\+c}!victoire@{victoire}}
+\index{victoire@{victoire}!demineur.\+c@{demineur.\+c}}
+\subsubsection{\texorpdfstring{victoire()}{victoire()}}
+{\footnotesize\ttfamily void victoire (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Fonction permettant de quitter le jeu après une victoire 

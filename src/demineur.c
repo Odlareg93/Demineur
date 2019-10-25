@@ -1,3 +1,8 @@
+/**
+ * @file demineur.c
+ * @brief Fonctions qui constituent la logique du jeu.
+ */
+
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>
@@ -38,7 +43,9 @@ game_over ()
   exit (0);
 
 }
-
+/**
+ * Fonction permettant de quitter le jeu après une victoire
+ */
 void
 victoire ()
 {

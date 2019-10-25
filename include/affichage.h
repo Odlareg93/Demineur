@@ -1,3 +1,8 @@
+/**
+ * @file demineur.h
+ * @brief Fonctions qui affiche le jeu.
+ */
+
 #include "../include/demineur.h"
 void print_tableau (scase tab[20][20]);
 #define BLEU  "\x1B[36m"	//bleu
