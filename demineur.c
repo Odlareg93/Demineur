@@ -17,8 +17,13 @@ void main(){
         }
     }
 
-
-    
+    int tab[40][2];
+    for(int a=0;a<40;a++)
+    {
+        srand (time (NULL)); 
+        tab[a][0] = Random();
+        tab[a][1] = Random();
+    }
 
     for(int a = 0;a<20;a++){
         for(int z = 0;z<20;z++){
@@ -29,4 +34,8 @@ void main(){
 
 }
 
+int Random ()
+{
+return ((rand () % (21)));
+} 
 
