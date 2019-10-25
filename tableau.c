@@ -97,3 +97,64 @@ putMine (struct scase tab[20][20])
       tab[u][y].val = 'x';
     }
 }
+
+/**
+ * \fn int getHidden(struct scase tab[20][20])
+ * \brief compte le nombre de case cachés
+ *
+ * \param le tableau du demineur à compter
+ * \return retourne le nombre de case caché dans le demineur
+ */
+int
+getHidden (struct scase tab[20][20])
+{
+    int compteur = 0;
+    for (int a = 0; a < 20; a++)
+    {
+      for (int z = 0; z < 20; z++)
+	{
+	  if(tab[a][z].isHidden == 1)
+        compteur++;
+	}
+    }
+    return compteur;
+}
+
+/**
+ * \fn int getMine(struct scase tab[20][20])
+ * \brief compte le nombre de mine
+ *
+ * \param le tableau du demineur à compter
+ * \return retourne le nombre de mine
+ */
+int
+getMine (struct scase tab[20][20])
+{
+    int compteur = 0;
+    for (int a = 0; a < 20; a++)
+    {
+      for (int z = 0; z < 20; z++)
+	{
+	  if(tab[a][z].val == 'x')
+        compteur++;
+	}
+    }
+    return compteur;
+}
+
+
+/**
+ * \fn int isWin(struct scase tab[20][20])
+ * \brief Verifie la victoire
+ *
+ * \param le tableau du demineur à compter
+ * \return retourne 1 si l'utilisateur a gagné 0 si il n'a pas gagné
+ */
+int
+isWin (struct scase tab[20][20])
+{
+    if ( getHidden(tab) == getMine(tab) )
+        return 1;
+    else
+        return 0;
+}
