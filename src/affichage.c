@@ -24,7 +24,7 @@ print_tableau (scase tab[20][20])
 
 	      if (tab[i][j].val == '0')
 		{
-		  printf (" ");
+		  printf ("  ");
 		  //printf("%s%c%s ",BLEU, tab[i][j].val,RESET);
 		}
 
@@ -55,7 +55,7 @@ print_tableau (scase tab[20][20])
 
 	    }
 	}
-      printf("%d",i);
+      //printf("%d",i);
       printf ("\n");
 
     }
